@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.call()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func call(){
+        ApiReqClass.sharedApiReq.fetchTopPopularDealsReq(inpParam: nil) { (isError, result, httpResponse) in
+            if (!isError){
+                print("No error")
+                print("response is \(result)")
+            }
+        }
+    }
 }
 

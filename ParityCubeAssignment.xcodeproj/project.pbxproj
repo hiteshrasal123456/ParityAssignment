@@ -14,6 +14,12 @@
 		18A627632007A6C7000DD10E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A627612007A6C7000DD10E /* LaunchScreen.storyboard */; };
 		18A6276E2007A6C7000DD10E /* ParityCubeAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6276D2007A6C7000DD10E /* ParityCubeAssignmentTests.swift */; };
 		18A627792007A6C7000DD10E /* ParityCubeAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A627782007A6C7000DD10E /* ParityCubeAssignmentUITests.swift */; };
+		18A627882007A762000DD10E /* ApiReqClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A627872007A762000DD10E /* ApiReqClass.swift */; };
+		18A6278B2007A7A9000DD10E /* TopAndPopularVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6278A2007A7A9000DD10E /* TopAndPopularVc.swift */; };
+		18A6278E2007CE33000DD10E /* TopDealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6278D2007CE33000DD10E /* TopDealsModel.swift */; };
+		18A627902007CEB4000DD10E /* PopularDealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6278F2007CEB4000DD10E /* PopularDealsModel.swift */; };
+		18A627962007E97C000DD10E /* DealsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A627942007E97C000DD10E /* DealsCell.swift */; };
+		18A627972007E97C000DD10E /* DealsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A627952007E97C000DD10E /* DealsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		18A627742007A6C7000DD10E /* ParityCubeAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParityCubeAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A627782007A6C7000DD10E /* ParityCubeAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParityCubeAssignmentUITests.swift; sourceTree = "<group>"; };
 		18A6277A2007A6C7000DD10E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A627872007A762000DD10E /* ApiReqClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReqClass.swift; sourceTree = "<group>"; };
+		18A6278A2007A7A9000DD10E /* TopAndPopularVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAndPopularVc.swift; sourceTree = "<group>"; };
+		18A6278D2007CE33000DD10E /* TopDealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDealsModel.swift; sourceTree = "<group>"; };
+		18A6278F2007CEB4000DD10E /* PopularDealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDealsModel.swift; sourceTree = "<group>"; };
+		18A627942007E97C000DD10E /* DealsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsCell.swift; sourceTree = "<group>"; };
+		18A627952007E97C000DD10E /* DealsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,10 @@
 		18A627572007A6C6000DD10E /* ParityCubeAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				18A627932007E8D4000DD10E /* CustomCell */,
+				18A6278C2007CDF9000DD10E /* Model */,
+				18A627892007A76D000DD10E /* ViewControllers */,
+				18A627862007A6FD000DD10E /* ApiReqClass */,
 				18A627582007A6C6000DD10E /* AppDelegate.swift */,
 				18A6275A2007A6C6000DD10E /* ViewController.swift */,
 				18A6275C2007A6C6000DD10E /* Main.storyboard */,
@@ -123,6 +139,40 @@
 				18A6277A2007A6C7000DD10E /* Info.plist */,
 			);
 			path = ParityCubeAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		18A627862007A6FD000DD10E /* ApiReqClass */ = {
+			isa = PBXGroup;
+			children = (
+				18A627872007A762000DD10E /* ApiReqClass.swift */,
+			);
+			path = ApiReqClass;
+			sourceTree = "<group>";
+		};
+		18A627892007A76D000DD10E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18A6278A2007A7A9000DD10E /* TopAndPopularVc.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18A6278C2007CDF9000DD10E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18A6278D2007CE33000DD10E /* TopDealsModel.swift */,
+				18A6278F2007CEB4000DD10E /* PopularDealsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18A627932007E8D4000DD10E /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				18A627942007E97C000DD10E /* DealsCell.swift */,
+				18A627952007E97C000DD10E /* DealsCell.xib */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +285,7 @@
 				18A627632007A6C7000DD10E /* LaunchScreen.storyboard in Resources */,
 				18A627602007A6C7000DD10E /* Assets.xcassets in Resources */,
 				18A6275E2007A6C6000DD10E /* Main.storyboard in Resources */,
+				18A627972007E97C000DD10E /* DealsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A6278E2007CE33000DD10E /* TopDealsModel.swift in Sources */,
 				18A6275B2007A6C6000DD10E /* ViewController.swift in Sources */,
 				18A627592007A6C6000DD10E /* AppDelegate.swift in Sources */,
+				18A627962007E97C000DD10E /* DealsCell.swift in Sources */,
+				18A6278B2007A7A9000DD10E /* TopAndPopularVc.swift in Sources */,
+				18A627882007A762000DD10E /* ApiReqClass.swift in Sources */,
+				18A627902007CEB4000DD10E /* PopularDealsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
